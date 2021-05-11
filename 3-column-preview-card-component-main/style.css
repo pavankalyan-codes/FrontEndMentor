@@ -66,8 +66,20 @@ body {
     background-color: hsl(179, 100%, 13%);
 }
 
+.t-orange {
+    color: hsl(31, 77%, 52%) !important;
+}
+
+.t-cyan {
+    color: hsl(184, 100%, 22%) !important;
+}
+
+.t-dark {
+    color: hsl(179, 100%, 13%) !important;
+}
+
 .btn {
-    background-color: transparent;
+    background-color: white;
     border: 2px solid white;
     border-radius: 20px;
     color: white;
