@@ -1,0 +1,119 @@
+body {
+    height: 100vh;
+    margin: 0px;
+    background-color: hsl(273, 75%, 66%);
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+.main {
+    height: 90%;
+    display: flex;
+    /* margin: auto; */
+    /* justify-content: center; */
+    align-items: center;
+    margin: 0px 100px;
+}
+
+.mycard {
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    height: 90%;
+    width: 100%;
+}
+
+.myaccordion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.acchead {
+    width: 100%;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.left {
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.right {
+    width: 50%;
+}
+
+#woman {
+    left: -40px;
+    position: absolute;
+    width: 80%;
+    /* height: 100%; */
+    top: 20%;
+    z-index: 5;
+}
+
+#box {
+    z-index: 11;
+    position: absolute;
+    top: 150px;
+    left: -93px;
+    overflow: visible !important;
+}
+
+#arrow {
+    width: 80%;
+    position: absolute;
+    /* height: 100%; */
+    top: 20%;
+    left: -30px;
+}
+
+h1 {
+    font-weight: bold;
+    padding: 50px 0px 0px 16px;
+}
+
+@media only screen and (max-width: 650px) {
+    .mycard {
+        flex-direction: column;
+    }
+    .right {
+        width: auto;
+    }
+    .myaccordion {
+        height: auto;
+    }
+    #woman {
+        left: calc(100%-250px);
+        position: absolute;
+        width: 50%;
+        height: 150px;
+        /* top: 20%; */
+        z-index: 5;
+        /* margin-left: 25%; */
+        /* margin-right: 25%; */
+        margin: auto;
+        left: 25%;
+        top: -90px;
+    }
+    .left {
+        width: auto;
+        overflow: visible;
+    }
+    .main {
+        margin: 100px 10px 10px 10px;
+    }
+    #arrow {
+        display: none;
+    }
+}
