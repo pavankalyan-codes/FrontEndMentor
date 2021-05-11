@@ -1,0 +1,100 @@
+body {
+    height: 100vh;
+    margin: 0px;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: black;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    height: 90%;
+    align-items: center;
+    margin: 0px 10px 0px 10px;
+    color: white;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    height: 75%;
+    justify-content: space-evenly;
+    padding: 10px 25px 10px 25px;
+}
+
+.btm {
+    margin: 25px;
+}
+
+.card {
+    height: 80%;
+    width: 250px;
+}
+
+.smooth-right {
+    border-radius: 0px 10px 10px 0px;
+}
+
+.smooth-left {
+    border-radius: 10px 0px 0px 10px;
+}
+
+
+/* Bright orange:  Dark cyan:  Very dark cyan:   */
+
+.orange {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.cyan {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.dark {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.btn {
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 20px;
+    color: white;
+    padding: 10px;
+    width: 70%;
+    cursor: pointer;
+}
+
+h1 {
+    font-family: "Big Shoulders Display", cursive;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+}
+
+@media only screen and (max-width: 650px) {
+    .main {
+        height: auto;
+        flex-direction: column;
+        margin: 50px 10px 10px 10px;
+    }
+    .card {
+        width: auto;
+    }
+    .smooth-left {
+        border-radius: 10px 10px 0px 0px;
+    }
+    .smooth-right {
+        border-radius: 0px 0px 10px 10px;
+    }
+}
