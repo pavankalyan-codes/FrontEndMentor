@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <script src="./script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300&display=swap" rel="stylesheet" />
+    <title>Frontend Mentor | Article preview component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+
+<body>
+    <div class="main">
+        <div class="article">
+            <div class="left">
+                <img id="drawers" src="./images/drawers.jpg" alt="" />
+            </div>
+            <div class="right">
+                <div class="title">
+                    <h2>
+                        Shift the overall look and feel by adding these wonderful touches to furniture in your home
+                    </h2>
+                </div>
+                <div class="content">
+                    Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete
+                </div>
+                <div id="share-hidden" class="author">
+                    <div class="details">
+                        <div class="prof-pic">
+                            <img class="avatar" src="./images/avatar-michelle.jpg" alt="" />
+                        </div>
+                        <div class="col">
+                            <div class="bold">Michelle Appleton</div>
+                            <div class="date">28 Jun 2020</div>
+                        </div>
+                    </div>
+                    <div class="share" onclick="share()">
+                        <div class="share-icons tool-tip">
+                            <span class="share-text">SHARE</span>
+                            <img class="ml-3" src="./images/icon-facebook.svg" alt="" />
+                            <img class="ml-3" src="./images/icon-twitter.svg" alt="" />
+                            <img class="ml-3" src="./images/icon-pinterest.svg" alt="" />
+                        </div>
+                        <img id="share-icon" src="./images/icon-share.svg" alt="" />
+                    </div>
+                </div>
+                <div id="share-bar" class="hide share-active">
+                    <div class="flex-col">
+                        <div class="share-icons">
+                            <span class="share-text">SHARE</span>
+                            <img class="ml-3" src="./images/icon-facebook.svg" alt="" />
+                            <img class="ml-3" src="./images/icon-twitter.svg" alt="" />
+                            <img class="ml-3" src="./images/icon-pinterest.svg" alt="" />
+                        </div>
+                        <div class="arrow">sds</div>
+                    </div>
+
+                    <div>
+                        <div class="share" onclick="share()">
+                            <img id="share-icon" src="./images/icon-share.svg" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<!--  .  -->

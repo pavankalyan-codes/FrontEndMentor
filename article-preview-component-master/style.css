@@ -1,0 +1,174 @@
+body {
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(237, 242, 248);
+    font-family: "Manrope", sans-serif;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    font-size: 12px;
+}
+
+#drawers {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.left {
+    width: 45%;
+}
+
+.right {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px 0px 20px;
+    justify-content: space-around;
+}
+
+.date {
+    font-size: 12px;
+    color: #545050;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+h2 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.article {
+    display: flex;
+    width: 70%;
+    height: 250px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.author {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    margin: 2px 0px 0px 10px;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.details {
+    display: flex;
+}
+
+.avatar {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.share {
+    width: 30px;
+    height: 30px;
+    align-self: center;
+    background: hsl(212, 23%, 69%);
+    border-radius: 50%;
+    display: flex;
+    cursor: pointer;
+    position: relative;
+}
+
+.tool-tip {
+    visibility: hidden;
+    width: auto;
+    background-color: rgb(72, 84, 106);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 15px 15px;
+    position: absolute;
+    z-index: 1;
+    top: -50px;
+    left: -250%;
+}
+
+#share-icon {
+    display: block;
+    margin: auto;
+}
+
+@media only screen and (min-width: 650px) {
+    .share:hover .tool-tip {
+        visibility: visible;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .article {
+        flex-direction: column;
+        height: 80%;
+    }
+    .left {
+        width: auto;
+        border-radius: 10px 10px 0px 0px;
+        height: 45%;
+    }
+    .right {
+        width: auto;
+        height: 55%;
+        padding: 20px 20px 5px 20px;
+    }
+    #drawers {
+        border-radius: 10px 10px 0px 0px;
+    }
+}
+
+.hide {
+    display: none !important;
+}
+
+.share-active {
+    background: hsl(217, 19%, 35%);
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: -20px;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.share-text {
+    color: #d2c9c9;
+    font-size: 12px;
+    letter-spacing: 5px;
+    align-self: center;
+}
+
+.ml-3 {
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    align-self: center;
+}
+
+.share-icons {
+    display: flex;
+}
