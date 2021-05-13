@@ -1,0 +1,139 @@
+body {
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+  color: white;
+  background-color: hsl(0, 100%, 74%);
+  background-image: url(./images/bg-intro-desktop.png);
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.left {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding-left: 30px;
+}
+
+.right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 100px 30px 0px;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.content {
+  padding: 80px;
+}
+
+.card {
+  border-radius: 5px;
+  background-color: white;
+  height: 70%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 5px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.lred {
+  color: hsl(0, 100%, 74%);
+  cursor: pointer;
+}
+
+.tc {
+  color: grey;
+  font-size: x-small;
+}
+
+.hero-btn {
+  background-color: hsl(154, 59%, 51%);
+  width: 89%;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  height: 45px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.hero-btn:focus,
+.hero-btn:hover {
+  box-shadow: 0px 0px 0px 0px #2196f380;
+}
+
+.input-box {
+  width: 80%;
+  border-radius: 5px;
+  border: 1px solid #a7aaae87;
+  height: 30px;
+  padding: 5px;
+  font-weight: 600;
+  color: #585151;
+  padding-left: 30px;
+}
+
+.input-box:focus {
+  box-shadow: 0px 0px 3px 3px #2196f380;
+}
+
+.sticker {
+  background-color: hsl(248, 32%, 49%);
+  border-radius: 5px;
+  width: 80%;
+  height: 45px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 650px) {
+  .main {
+    flex-direction: column;
+  }
+  .content {
+    padding: 0;
+    text-align: center;
+  }
+  .left {
+    width: 80%;
+  }
+  .right {
+    width: auto;
+    padding: 0px;
+  }
+  .card {
+    border-radius: 5px;
+    background-color: white;
+    height: 400px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+    margin-bottom: 50px;
+  }
+}
