@@ -15,7 +15,7 @@ function setTimer() {
 
 function get_time_diff(datetime) {
   var datetime =
-    typeof datetime !== "undefined" ? datetime : "2021-08-14 01:02:03.123456";
+    typeof datetime !== "undefined" ? datetime : "2021-08-14 00:00:00.123456";
 
   var datetime = new Date(datetime).getTime();
   var now = new Date().getTime();
