@@ -1,53 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <script src="./script.js"></script>
     <title>Frontend Mentor | Intro component with sign up form</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <link rel="stylesheet" href="style.css" />
-  </head>
+</head>
 
-  <body>
+<body>
     <div class="main">
-      <div class="left">
-        <div class="content">
-          <h1>Learn to code by watching others</h1>
-          <p class="fs-12">
-            See how experienced developers solve problems in real-time. Watching
-            scripted tutorials is great, but understanding how developers think
-            is invaluable.
-          </p>
+        <div class="left">
+            <div class="content">
+                <h1>Learn to code by watching others</h1>
+                <p class="fs-12">
+                    See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.
+                </p>
+            </div>
         </div>
-      </div>
-      <div class="right">
-        <div class="sticker">
-          <span class="bold">Try it free 7 days &nbsp;</span>
-          <span> then $20/mo. thereafter</span>
-        </div>
-        <div class="card">
-          <input placeholder="First Name" class="input-box" type="text" />
-          <input placeholder="Last Name" class="input-box" type="text" />
-          <input placeholder="Email Address" class="input-box" type="text" />
-          <input placeholder="Password" class="input-box" type="text" />
-          <button class="hero-btn">CLAIM YOUR FREE TRAIL</button>
-          <div class="tc">
-            By clicking the button, you are agreeing to our
-            <span class="lred">Terms and Services</span>
+        <div class="right">
+            <div class="sticker" role="button" tabindex="0">
+                <div class="disp-inline">
+                    <span class="bold">Try it free 7 days &nbsp;</span>
+                    <span>then $20/mo. thereafter</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-wrapper">
+                    <div>
+                        <div class="mycol">
+                            <div class="row">
+                                <input id="fname" placeholder="First Name" class="mt-5 input-box" type="text" />
+                                <img id="fname-erricon" class="error hide" src="./images/icon-error.svg" alt="" />
+                            </div>
+                            <div id="fname-errtext" class="error-text hide">
+                                <span>First Name cannot be empty</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="mycol">
+                            <div class="row">
+                                <input id="lname" placeholder="Last Name" class="mt-5 input-box" type="text" />
+                                <img id="lname-erricon" class="error hide" src="./images/icon-error.svg" alt="" />
+                            </div>
+                            <div id="lname-errtext" class="error-text hide">
+                                <span>Last Name cannot be empty</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="mycol">
+                            <div class="row">
+                                <input id="email" placeholder="Email Address" class="mt-5 input-box" type="text" />
+
+                                <img id="password-erricon" class="error hide" src="./images/icon-error.svg" alt="" />
+                            </div>
+                            <div id="password-errtext" class="error-text hide">
+                                <span>Look like this is not an Email</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="mycol">
+                            <div class="row">
+                                <input id="password" placeholder="Password" class="mt-5 input-box" type="text" />
+
+                                <img id="email-erricon" class="error hide" src="./images/icon-error.svg" alt="" />
+                            </div>
+                            <div id="email-errtext" class="error-text hide">
+                                <span>Password cannot be empty</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="mt-5 hero-btn" onclick="claim()">
+              CLAIM YOUR FREE TRAIL
+            </button>
+                    <div class="tc">
+                        By clicking the button, you are agreeing to our
+                        <span class="lred" tabindex="0" role="link">Terms and Services</span
+              >
+            </div>
           </div>
         </div>
       </div>
