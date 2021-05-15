@@ -143,6 +143,9 @@ h3 {
     .align-center {
         flex-direction: row;
     }
+    .last {
+        margin-bottom: 50px;
+    }
     .col {
         display: flex;
         flex-direction: column;
