@@ -151,7 +151,7 @@ body {
     display: flex;
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 750px) {
     body {
         background-image: url(./images/bg-mobile.png);
         background-position: right 0 top 0vh;
