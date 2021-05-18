@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <script src="./script.js"></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Coding Bootcamp Testimonials Slider</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="testimonial">
+        <div class="quote">
+          <div id="quote-text" class="quote-text">
+            “ I’ve been interested in coding for a while but never taken the
+            jump, until now. I couldn’t recommend this course enough. I’m now in
+            the job of my dreams and so excited about the future. ”
+          </div>
+          <div class="ml-20">
+            <span id="name" class="bold"> Tanya Sinclair</span>
+            <span id="role" class="grey">UX Engineer</span>
+          </div>
+        </div>
+        <div class="person">
+          <img
+            id="profile"
+            class="profile-pic"
+            src="./images/image-tanya.jpg"
+            alt=""
+          />
+          <div class="nav">
+            <div class="left-arrow" role="button" onclick="previous()">
+              <img src="./images/icon-prev.svg" alt="" />
+            </div>
+            <div class="right-arrow" role="button" onclick="next()">
+              <img src="./images/icon-next.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!--   -->
