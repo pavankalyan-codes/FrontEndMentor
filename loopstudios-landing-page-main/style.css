@@ -1,0 +1,94 @@
+body {
+    background: url(./images/desktop/image-hero.jpg);
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    background-repeat: no-repeat;
+}
+
+.flex-row {
+    display: flex;
+}
+
+.nav-menu {
+    width: 400px;
+    justify-content: space-evenly;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.title {
+    width: 390px;
+    background: transparent;
+    height: 180px;
+    border: 2px solid white;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.title-wrapper {
+    padding: 30px;
+}
+
+.main {
+    height: 100vh;
+}
+
+.header {
+    height: 150px;
+}
+
+.card1 {
+    width: 60%;
+}
+
+.fit-div {
+    width: 100%;
+}
+
+.card2 {
+    background-color: white;
+    width: 50%;
+    position: absolute;
+    z-index: 1111;
+    left: 600px;
+    top: 300px;
+    height: 100%;
+}
+
+.content1 {
+    position: relative;
+    margin: auto;
+    padding: 100px;
+}
+
+.fs-40 {
+    font-size: 40px;
+}
+
+.font-small {
+    font-weight: 300;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.content-wrap {
+    color: black;
+    padding: 50px 222px 50px 50px;
+}
+
+.main-inner {
+    padding: 50px;
+    height: 100%;
+}
+
+.card-content {
+    font-weight: 300;
+    color: #3c3838;
+}
