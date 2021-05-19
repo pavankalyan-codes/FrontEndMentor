@@ -24,6 +24,7 @@ html {
     justify-content: center;
     align-items: center;
     border: 1px solid transparent;
+    cursor: pointer;
 }
 
 .highlight:hover {
@@ -115,6 +116,10 @@ html {
 .content-wrap {
     color: black;
     padding: 50px 222px 50px 50px;
+}
+
+.main-content {
+    height: 100%;
 }
 
 .main-inner {
