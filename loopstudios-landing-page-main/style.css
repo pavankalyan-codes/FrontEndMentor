@@ -34,7 +34,6 @@ html {
     width: 400px;
     justify-content: space-evenly;
     font-weight: bold;
-    cursor: pointer;
     height: 100%;
     align-items: center;
 }
