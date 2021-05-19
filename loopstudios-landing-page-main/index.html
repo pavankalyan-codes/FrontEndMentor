@@ -10,25 +10,57 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <script src="./script.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400&display=swap" rel="stylesheet" />
     <title>Frontend Mentor | Loopstudios landing page</title>
 </head>
 
 <body>
-    <div class="main">
+    <div id="main" class="main">
         <div class="main-inner">
             <div class="header flex-row justify-content-between">
-                <div><img src="./images/logo.svg" alt="" /></div>
-                <div class="flex-row nav-menu">
+                <div>
+                    <div><img src="./images/logo.svg" alt="" /></div>
+                </div>
+                <div class="main-content">
+                    <div class="flex-row nav-menu hide-menu">
+                        <div role="navigation" tabindex="0" class="highlight">About</div>
+                        <div role="navigation" tabindex="0" class="highlight">
+                            Careers
+                        </div>
+                        <div role="navigation" tabindex="0" class="highlight">Events</div>
+                        <div role="navigation" tabindex="0" class="highlight">
+                            Products
+                        </div>
+                        <div role="navigation" tabindex="0" class="highlight">
+                            Support
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hamburger hide">
+                    <img onclick="openMenu()" src="./images/icon-hamburger.svg" alt="" />
+                </div>
+            </div>
+            <div class="title">
+                <div class="title-wrapper">Immersive experiences that deliver</div>
+            </div>
+        </div>
+    </div>
+    <div id="hamMenu" class="ham-menu hide">
+        <div class="ham-inner">
+            <div class="menu-row">
+                <div class="ham-logo"><img src="./images/logo.svg" alt="" /></div>
+                <div onclick="closeMenu()" class="close-btn">&times;</div>
+            </div>
+            <div class="menu-list">
+                <div class="flex-row nav-menu align-unset flex-col">
                     <div role="navigation" tabindex="0" class="highlight">About</div>
                     <div role="navigation" tabindex="0" class="highlight">Careers</div>
                     <div role="navigation" tabindex="0" class="highlight">Events</div>
                     <div role="navigation" tabindex="0" class="highlight">Products</div>
                     <div role="navigation" tabindex="0" class="highlight">Support</div>
                 </div>
-            </div>
-            <div class="title">
-                <div class="title-wrapper">Immersive experiences that deliver</div>
             </div>
         </div>
     </div>
@@ -49,7 +81,7 @@
     </div>
     <div class="creations">
         <div class="creations-inner">
-            <div class="flex-row justify-content-between">
+            <div class="flex-row justify-content-between jcenter">
                 <div class="col-center">
                     <h2 class="fs-30">OUR CREATIONS</h2>
                 </div>
@@ -57,35 +89,35 @@
             </div>
             <div class="gallery flex-row">
                 <div class="flex-item">
-                    <img src="./images/desktop/image-deep-earth.jpg" alt="" />
+                    <img class="img1" src="./images/desktop/image-deep-earth.jpg" alt="" />
                     <div class="bottom-left">Deep earth</div>
                 </div>
                 <div class="flex-item">
-                    <img src="./images/desktop/image-night-arcade.jpg" alt="" />
+                    <img class="img2" src="./images/desktop/image-night-arcade.jpg" alt="" />
                     <div class="bottom-left">night arcade</div>
                 </div>
                 <div class="flex-item">
-                    <img src="./images/desktop/image-soccer-team.jpg" alt="" />
+                    <img class="img3" src="./images/desktop/image-soccer-team.jpg" alt="" />
                     <div class="bottom-left">soccer team</div>
                 </div>
                 <div class="flex-item">
-                    <img src="./images/desktop/image-grid.jpg" alt="" />
+                    <img class="img4" src="./images/desktop/image-grid.jpg" alt="" />
                     <div class="bottom-left">image grid</div>
                 </div>
                 <div class="flex-item">
-                    <img src="./images/desktop/image-from-above.jpg" alt="" />
+                    <img class="img5" src="./images/desktop/image-from-above.jpg" alt="" />
                     <div class="bottom-left">From up above Vr</div>
                 </div>
                 <div class="flex-item">
-                    <img src="./images/desktop/image-pocket-borealis.jpg" alt="" />
+                    <img class="img6" src="./images/desktop/image-pocket-borealis.jpg" alt="" />
                     <div class="bottom-left">pocket borealis</div>
                 </div>
                 <div class="flex-item">
-                    <img src="./images/desktop/image-curiosity.jpg" alt="" />
+                    <img class="img7" src="./images/desktop/image-curiosity.jpg" alt="" />
                     <div class="bottom-left">The curiosity</div>
                 </div>
                 <div class="flex-item">
-                    <img src="./images/desktop/image-fisheye.jpg" alt="" />
+                    <img class="img8" src="./images/desktop/image-fisheye.jpg" alt="" />
                     <div class="bottom-left">The fish eye</div>
                 </div>
             </div>
@@ -93,9 +125,20 @@
     </div>
     <div class="footer">
         <div class="footer-inner">
-            <div class="row1">
-                <div class="flex-row justify-content-between">
-                    <img src="./images/logo.svg" alt="" />
+            <div class="col1">
+                <div class="flex-col align-center justify-content-between">
+                    <img class="fit-c" src="./images/logo.svg" alt="" />
+                    <div class="mt-50 flex-row nav-menu footer-nav fw-400">
+                        <div role="navigation" tabindex="0">About</div>
+                        <div role="navigation" tabindex="0">Careers</div>
+                        <div role="navigation" tabindex="0">Events</div>
+                        <div role="navigation" tabindex="0">Products</div>
+                        <div role="navigation" tabindex="0">Support</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col2">
+                <div class="flex-col justify-content-between">
                     <div class="social-icons flex-row">
                         <div>
                             <img src="./images/icon-facebook.svg" alt="" />
@@ -110,18 +153,9 @@
                             <img src="./images/icon-instagram.svg" alt="" />
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="row2">
-                <div class="flex-row justify-content-between">
-                    <div class="flex-row nav-menu footer-nav fw-400">
-                        <div role="navigation" tabindex="0">About</div>
-                        <div role="navigation" tabindex="0">Careers</div>
-                        <div role="navigation" tabindex="0">Events</div>
-                        <div role="navigation" tabindex="0">Products</div>
-                        <div role="navigation" tabindex="0">Support</div>
+                    <div class="mt-50 flex-row jcenter justify-content-between">
+                        <div class="fw-300">© 2021 Loopstudios. All rights reserved.</div>
                     </div>
-                    <div class="fw-300">© 2021 Loopstudios. All rights reserved.</div>
                 </div>
             </div>
         </div>
