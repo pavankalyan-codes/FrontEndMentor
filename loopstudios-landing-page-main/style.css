@@ -32,7 +32,7 @@ html {
 }
 
 .nav-menu {
-    width: 400px;
+    width: 100%;
     justify-content: space-evenly;
     font-weight: bold;
     height: 100%;
@@ -180,6 +180,12 @@ h2 {
     color: black;
 }
 
+.mygrid {
+    display: grid;
+    grid-gap: 8px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
 .fs-30 {
     font-size: 30px;
     font-weight: 300;
@@ -218,6 +224,8 @@ h2 {
 
 .fw-300 {
     font-weight: 300;
+    font-size: 12px;
+    text-align: center;
 }
 
 .fw-400 {
@@ -246,6 +254,33 @@ h2 {
 
 .col2 {
     height: 50%;
+}
+
+.fh {
+    height: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+    .content1 {
+        margin: auto;
+        padding: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+    .card1 {
+        width: auto;
+    }
+    .card2 {
+        position: unset;
+        width: auto;
+    }
+    .content-wrap {
+        padding: 50px;
+        text-align: center;
+    }
+    .card-content {
+        padding-top: 20px;
+    }
 }
 
 @media only screen and (max-width: 650px) {
@@ -369,6 +404,10 @@ h2 {
         background-color: rgba(0, 0, 0, 0.856);
         height: 100%;
         width: 100%;
+    }
+    .mygrid {
+        grid-gap: 0;
+        grid-template-columns: auto;
     }
 }
 
