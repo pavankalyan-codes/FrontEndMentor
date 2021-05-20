@@ -184,7 +184,7 @@ h2 {
     justify-content: space-around;
     background: url(./images/bg-top.svg), url(./images/bg-bottom.svg);
     background-repeat: no-repeat;
-    background-position: right, left bottom;
+    background-position: right 0vh, left bottom;
 }
 
 .row2 {
