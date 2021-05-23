@@ -1,0 +1,193 @@
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    height: auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    background: transparent;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.sign-up {
+    color: white;
+    background: #6dd2d2;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+.grey {
+    color: grey;
+}
+
+.login {
+    font-weight: 700;
+    color: grey;
+}
+
+.nav {
+    width: 400px;
+    margin: auto;
+    font-weight: bold;
+    justify-content: space-evenly;
+}
+
+.main-title {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.main {
+    height: 100vh;
+}
+
+.working-img {
+    width: 660px;
+}
+
+.get-started {
+    width: 200px;
+    height: 50px;
+    color: white;
+    background: #6dd2d2;
+    margin-top: 35px;
+    border-radius: 25px;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.pr-120 {
+    padding-right: 120px;
+}
+
+h1,
+h2 {
+    margin: 0;
+}
+
+h1 {
+    line-height: 60px !important;
+    font-size: 55px !important;
+    font-weight: bold !important;
+}
+
+.header-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-content {}
+
+.header-right {
+    width: 50%;
+}
+
+.header-menu {
+    width: 500px;
+    justify-content: space-between;
+}
+
+.hide {
+    display: none;
+}
+
+.menu {
+    height: 10vh;
+}
+
+.main-content-wrapper {}
+
+.main-content {
+    padding: 50px;
+    overflow: hidden;
+}
+
+.title {
+    font-weight: bold;
+    align-self: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.url-bar-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.shorten-bar {
+    height: 100px;
+    width: 100%;
+    border-radius: 10px;
+    background: #4b406b;
+    background-image: url(./images/bg-boost-desktop.svg);
+    background-size: 100%;
+    background-blend-mode: soft-light;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.shorten-btn {
+    background: #6dd2d2;
+    height: 40px;
+    border-radius: 5px;
+    width: 20%;
+    align-self: center;
+}
+
+#url-input {
+    border: none;
+    width: 70%;
+    height: 40px;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+}
+
+input[type="email"]::placeholder {
+    /* Firefox, Chrome, Opera */
+    text-align: center;
+}
+
+input[type="text"]::placeholder {
+    /* Firefox, Chrome, Opera */
+    text-align: center;
+}
+
+input[type="tel"]::placeholder {
+    /* Firefox, Chrome, Opera */
+    text-align: center;
+}
+
+input[type="email"]:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    text-align: center;
+}
+
+input[type="email"]::-ms-input-placeholder {
+    /* Microsoft Edge */
+    text-align: center;
+}
