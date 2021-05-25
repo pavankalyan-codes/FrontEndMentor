@@ -5,6 +5,7 @@ body {
     background: #1e2140;
     color: white;
     height: 100vh;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .main {
@@ -133,10 +134,26 @@ h1 {
     cursor: pointer;
 }
 
+button:focus {
+    outline: 0;
+}
+
+.noSelect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 @media only screen and (max-width: 500px) {
     .toggler {
         width: 100%;
         font-size: 14px;
+    }
+    .wrapper {
+        padding: 10px;
     }
 }
 
