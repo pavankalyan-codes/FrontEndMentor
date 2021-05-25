@@ -11,8 +11,8 @@ var messages = {
     lb: "You have completed your long break. Go back to work",
 };
 var isPaused = false;
-var currMin = 0;
-var currSec = 5;
+var currMin = 24;
+var currSec = 59;
 var currentMode = "pom";
 var intervalId;
 var msg = new SpeechSynthesisUtterance();
