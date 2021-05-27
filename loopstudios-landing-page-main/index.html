@@ -5,6 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -42,7 +44,7 @@
                     <img onclick="openMenu()" src="./images/icon-hamburger.svg" alt="" />
                 </div>
             </div>
-            <div class="title">
+            <div class="title" data-aos="fade-down">
                 <div class="title-wrapper">Immersive experiences that deliver</div>
             </div>
         </div>
@@ -66,9 +68,9 @@
     </div>
     <div id="second-page" class="content1">
         <div id="card1" class="card1">
-            <img class="fit-div" src="./images/desktop/image-interactive.jpg" alt="" />
+            <img class="fit-div" data-aos="fade-right" src="./images/desktop/image-interactive.jpg" alt="" />
         </div>
-        <div class="card2">
+        <div class="card2" data-aos="fade-left">
             <div class="content-wrap">
                 <div class="card-title">
                     <h2 class="fs-40 font-small upper">The leader in interactive VR</h2>
@@ -88,35 +90,35 @@
                 <div><button class="see-all">SEE ALL</button></div>
             </div>
             <div class="gallery mygrid">
-                <div class="flex-item">
+                <div class="flex-item" data-aos="flip-left">
                     <img class="fh img1" src="./images/desktop/image-deep-earth.jpg" alt="" />
                     <div class="bottom-left">Deep earth</div>
                 </div>
-                <div class="flex-item">
+                <div class="flex-item" data-aos="flip-left">
                     <img class="fh img2" src="./images/desktop/image-night-arcade.jpg" alt="" />
                     <div class="bottom-left">night arcade</div>
                 </div>
-                <div class="flex-item">
+                <div class="flex-item" data-aos="flip-left">
                     <img class="fh img3" src="./images/desktop/image-soccer-team.jpg" alt="" />
                     <div class="bottom-left">soccer team</div>
                 </div>
-                <div class="flex-item">
+                <div class="flex-item" data-aos="flip-left">
                     <img class="fh img4" src="./images/desktop/image-grid.jpg" alt="" />
                     <div class="bottom-left">image grid</div>
                 </div>
-                <div class="flex-item">
+                <div class="flex-item" data-aos="flip-left">
                     <img class="fh img5" src="./images/desktop/image-from-above.jpg" alt="" />
                     <div class="bottom-left">From up above Vr</div>
                 </div>
-                <div class="flex-item">
+                <div class="flex-item" data-aos="flip-left">
                     <img class="fh img6" src="./images/desktop/image-pocket-borealis.jpg" alt="" />
                     <div class="bottom-left">pocket borealis</div>
                 </div>
-                <div class="flex-item">
+                <div class="flex-item" data-aos="flip-left">
                     <img class="fh img7" src="./images/desktop/image-curiosity.jpg" alt="" />
                     <div class="bottom-left">The curiosity</div>
                 </div>
-                <div class="flex-item">
+                <div class="flex-item" data-aos="flip-left">
                     <img class="fh img8" src="./images/desktop/image-fisheye.jpg" alt="" />
                     <div class="bottom-left">The fish eye</div>
                 </div>
@@ -160,6 +162,10 @@
             </div>
         </div>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

@@ -65,7 +65,6 @@ html {
     height: auto;
     border: 2px solid white;
     text-transform: uppercase;
-    animation: flash 2s ease;
     margin-bottom: 200px;
     font-weight: 400;
 }
@@ -111,7 +110,7 @@ html {
 
 .fit-div {
     width: 100%;
-    animation: leftmove 1s ease-out;
+    /* animation: leftmove 1s ease-out; */
 }
 
 .card2 {
@@ -122,7 +121,6 @@ html {
     left: 600px;
     top: 300px;
     height: 50%;
-    animation: rightmove 1s ease-out;
 }
 
 @keyframes rightmove {
