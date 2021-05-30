@@ -69,7 +69,7 @@ body {
     width: 100%;
     height: 10px;
     position: absolute;
-    transform: rotate(180deg);
+    transform: rotate(90deg);
     top: calc(50% - 5px);
     display: flex;
     align-items: center;
@@ -94,17 +94,4 @@ body {
     background: #f80909;
     top: calc(50% - 10px);
     left: calc(50% - 10px);
-}
-
-
-/* animation: hands infinite linear 60s;
-} */
-
-@keyframes hands {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
 }
