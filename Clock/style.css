@@ -1,7 +1,18 @@
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url("https://lkp.dispendik.surabaya.go.id/assets/loading.gif") 50% 50% no-repeat rgb(249, 249, 249);
+}
+
 body {
     height: 100vh;
     background-color: black;
     margin: 0;
+    font-family: "Orbitron", sans-serif;
 }
 
 .main {
@@ -38,7 +49,7 @@ body {
 .seconds {
     height: 50%;
     width: 30%;
-    background: red;
+    background: black;
     position: absolute;
     left: 20%;
     display: flex;
@@ -91,7 +102,40 @@ body {
     height: 20px;
     position: absolute;
     border-radius: 50%;
-    background: #f80909;
+    background: black;
+    z-index: 999999;
     top: calc(50% - 10px);
     left: calc(50% - 10px);
+}
+
+.twelve {
+    position: absolute;
+    left: calc(50% - 20px);
+    top: 10px;
+}
+
+.six {
+    position: absolute;
+    bottom: 10px;
+    left: calc(50% - 20px);
+}
+
+.nine {
+    top: calc(50% - 15px);
+    position: absolute;
+}
+
+.three {
+    position: absolute;
+    top: calc(50% - 15px);
+    left: calc(100% - 40px);
+}
+
+.numbers {
+    width: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
