@@ -18,7 +18,9 @@ async function fetchBtc() {
         // get the response body (the method explained below)
         let data = await response.json();
         let price = data.rate.toFixed(2);
-        document.getElementById("btc-price").textContent = price;
+        document.getElementById("btc-loader").style.display = "none";
+        document.getElementById("btc-live").style.display = "block";
+        document.getElementById("btc-live").textContent = "$" + price;
     } else {
         return 0;
     }
@@ -36,7 +38,9 @@ async function fetchEth() {
         // get the response body (the method explained below)
         let data = await response.json();
         let price = data.rate.toFixed(2);
-        document.getElementById("eth-price").textContent = price;
+        document.getElementById("eth-loader").style.display = "none";
+        document.getElementById("eth-live").style.display = "block";
+        document.getElementById("eth-live").textContent = "$" + price;
     } else {
         return 0;
     }
@@ -54,7 +58,9 @@ async function fetchDoge() {
         // get the response body (the method explained below)
         let data = await response.json();
         let price = data.rate.toFixed(2);
-        document.getElementById("doge-price").textContent = price;
+        document.getElementById("doge-loader").style.display = "none";
+        document.getElementById("doge-live").style.display = "block";
+        document.getElementById("doge-live").textContent = "$" + price;
     } else {
         return 0;
     }
@@ -72,7 +78,9 @@ async function fetchXrp() {
         // get the response body (the method explained below)
         let data = await response.json();
         let price = data.rate.toFixed(2);
-        document.getElementById("xrp-price").textContent = price;
+        document.getElementById("xrp-loader").style.display = "none";
+        document.getElementById("xrp-live").style.display = "block";
+        document.getElementById("xrp-live").textContent = "$" + price;
     } else {
         return 0;
     }
