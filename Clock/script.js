@@ -25,8 +25,20 @@ function rotate() {
     let hours = d.getHours(); // => 9
     let minutes = d.getMinutes(); // =>  30
     let seconds = d.getSeconds(); // => 51
-    document.getElementById("seconds-hand").style.transform =
-        "rotate(" + ((90 + seconds * 6) % 360) + "deg)";
+
+    setTimeout(() => {
+        document.getElementById("seconds-hand").style.transform =
+            "rotate(" + ((90 + seconds * 6 + 1) % 360) + "deg)";
+    }, 20);
+    setTimeout(() => {
+        document.getElementById("seconds-hand").style.transform =
+            "rotate(" + ((90 + seconds * 6 - 1) % 360) + "deg)";
+    }, 40);
+    setTimeout(() => {
+        document.getElementById("seconds-hand").style.transform =
+            "rotate(" + ((90 + seconds * 6) % 360) + "deg)";
+    }, 0);
+
     let hourChange =
         ((90 + (hours % 12) * 30) % 360) + ((minutes / 60) * 100 * 30) / 100;
     let minuteChange =

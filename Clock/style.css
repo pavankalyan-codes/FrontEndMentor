@@ -47,9 +47,9 @@ body {
 }
 
 .seconds {
-    height: 50%;
+    height: 30%;
     width: 30%;
-    background: black;
+    background: red;
     position: absolute;
     left: 20%;
     display: flex;
@@ -60,7 +60,7 @@ body {
 .minutes {
     height: 50%;
     width: 25%;
-    background: rgb(16, 173, 77);
+    background: #0004ff;
     position: absolute;
     left: 25%;
     display: flex;
