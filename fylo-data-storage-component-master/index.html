@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap"
       rel="stylesheet"
     />
+    <script src="./script.js"></script>
     <link
       rel="icon"
       type="image/png"
@@ -47,7 +48,7 @@
             <div class="wrapper">
               <div class="left-data-wrapper">
                 <div class="left-data">
-                  <span class="bold fs-big">185</span>
+                  <span id="data-left" class="bold fs-big">185</span>
                   <span class="fs-small">GB LEFT</span>
                 </div>
                 <div class="arr-wrap">
@@ -55,14 +56,26 @@
                 </div>
               </div>
               <div class="usage-text">
-                You’ve used <span class="bold">815 GB</span> of your storage
+                You’ve used <span class="bold" id="data-used">815 GB</span> of
+                your storage
               </div>
               <div class="usage-range">
-                <div class="bar">
+                <form onchange="onSliderChange()">
+                  <input
+                    id="data-slider"
+                    class="slider"
+                    type="range"
+                    min="0"
+                    max="1000"
+                    value="815"
+                  />
+                </form>
+
+                <!-- <div class="bar">
                   <div class="inner-bar">
                     <div class="thumb"></div>
                   </div>
-                </div>
+                </div> -->
               </div>
               <div class="limits">
                 <div class="bold">0 GB</div>
