@@ -26,6 +26,7 @@ body {
   display: flex;
   width: 800px;
   justify-content: space-evenly;
+  box-sizing: border-box;
 }
 
 .logo-wrapper {
@@ -167,10 +168,9 @@ body {
     width: 100%;
     height: auto;
     padding: 20px;
+    box-sizing: border-box;
   }
-  .logo-wrapper {
-    width: 90%;
-  }
+
   .arrow {
     display: none;
   }
@@ -188,7 +188,7 @@ body {
     font-size: 20px;
   }
   .usage-wrapper {
-    width: 90%;
+    width: 300px;
   }
 }
 
