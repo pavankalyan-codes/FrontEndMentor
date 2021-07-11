@@ -224,6 +224,7 @@ h1 {
   font-size: 30px;
   font-weight: bold;
   color: #26c2ae;
+  word-break: break-all;
 }
 .data:before {
   content: "$";
@@ -240,4 +241,7 @@ h1 {
 .selected-custom-tip {
   background-color: #26c2ae;
   color: white;
+}
+.custom-tip:focus {
+  border: 2px solid #26c2ae;
 }
