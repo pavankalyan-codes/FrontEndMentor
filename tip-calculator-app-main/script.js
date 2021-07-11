@@ -84,8 +84,8 @@ function reset(){
     totalBill="";
     tipPercentage="";
     noOfPeople="";
-    tipEach.textContent=0.00;
-    totalEach.textContent=0.00;
+    tipEach.textContent="0.00";
+    totalEach.textContent="0.00";
 
 }
 
