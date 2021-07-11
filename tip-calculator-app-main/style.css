@@ -85,7 +85,7 @@ h1 {
   cursor: pointer;
 }
 .ml-14 {
-  margin-left: 14px;
+  margin-left: 13px;
 }
 .card2 {
   width: 97%;
@@ -125,7 +125,7 @@ h1 {
   background: #e5f3f4;
   outline: none;
   border: none;
-  margin-left: 14px;
+  margin-left: 13px;
   color: black;
   font-size: 20px;
 }
@@ -230,4 +230,14 @@ h1 {
   font-size: 30px;
   margin-right: 5px;
   font-weight: normal;
+}
+@media (max-height: 450px) {
+  .content-wrapper {
+    height: auto;
+  }
+}
+
+.selected-custom-tip {
+  background-color: #26c2ae;
+  color: white;
 }

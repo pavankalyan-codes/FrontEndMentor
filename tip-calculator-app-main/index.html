@@ -56,18 +56,40 @@
                   checked="true"
                   type="radio"
                 />
-                <label for="tip5" class="radio-btn">5%</label>
+                <label for="tip5" onclick="getTip(5)" class="radio-btn"
+                  >5%</label
+                >
 
-                <input id="tip10" name="tip-percentage" type="radio" />
+                <input
+                  id="tip10"
+                  onclick="getTip(10)"
+                  name="tip-percentage"
+                  type="radio"
+                />
                 <label for="tip10" class="radio-btn ml-14">10%</label>
 
-                <input id="tip15" name="tip-percentage" type="radio" />
+                <input
+                  id="tip15"
+                  onclick="getTip(15)"
+                  name="tip-percentage"
+                  type="radio"
+                />
                 <label for="tip15" class="radio-btn">15%</label>
 
-                <input id="tip25" name="tip-percentage" type="radio" />
+                <input
+                  id="tip25"
+                  onclick="getTip(25)"
+                  name="tip-percentage"
+                  type="radio"
+                />
                 <label for="tip25" class="radio-btn ml-14">25%</label>
 
-                <input id="tip50" name="tip-percentage" type="radio" />
+                <input
+                  id="tip50"
+                  onclick="getTip(50)"
+                  name="tip-percentage"
+                  type="radio"
+                />
                 <label for="tip50" class="radio-btn">50%</label>
 
                 <input
@@ -98,7 +120,7 @@
                   <span class="sub-prop">/ person</span>
                 </div>
 
-                <span class="data">4.27</span>
+                <span id="tip-each" class="data">0.00</span>
               </div>
               <div class="total amount d-flex mt-4 mb-4">
                 <div class="d-flex flex-column">
@@ -106,10 +128,10 @@
                   <span class="sub-prop">/ person</span>
                 </div>
 
-                <span class="data">4.27</span>
+                <span id="total-each" class="data">0.00</span>
               </div>
               <div class="reset d-flex justify-content-center">
-                <button class="reset-btn">RESET</button>
+                <button onclick="reset()" class="reset-btn">RESET</button>
               </div>
             </div>
           </div>
